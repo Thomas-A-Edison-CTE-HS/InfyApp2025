@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <style>
+    body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+    .w3-quarter img{margin-bottom: -6px; cursor: pointer}
+    .w3-quarter img:hover{opacity: 0.6; transition: 0.3s}
+    </style>
+  </head>
+<body class="w3-light-grey">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-animate-right w3-top w3-text-light-grey w3-large" style="z-index:3;width:250px;font-weight:bold;display:none;right:0;" id="mySidebar">
+  <a href="javascript:void()" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-32">CLOSE</a> 
+  
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">ABOUT</a> 
+  
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-white w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding">Thomas A. Edison CTE HS InfyApp 2025</span>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content" style="max-width:1600px;margin-top:83px">
+  
+  <!-- Photo grid -->
+  <div class="w3-row w3-grayscale-min">
+    <div class="w3-third">
+     <a href="https://thomas-a-edison-cte-hs.github.io/TheChillCapybaras/" ><img src="images/ChillCapibaras.gif" style="width:100%" alt="Team Picture"></a>
+     <a href="https://marisar12.github.io/MentalSpark/" ><img src="images/CodeWizards.gif" style="width:100%" alt="eam Picturen"></a>
+      <a href="https://thomas-a-edison-cte-hs.github.io/TheProfitPioneers/" ><img src="images/ProfitPioneers.gif" style="width:100%" alt="eam Picture"></a>
+     
+   </div>
+    
+    <div class="w3-third">
+      <a href="https://rominar9.github.io/InfyAppTeamTemplate/" ><img src="images/CyberKnight.gif" style="width:100%" alt="eam Picture"></a>
+      <a href="https://thomas-a-edison-cte-hs.github.io/Tech-Titans/" ><img src="images/TechTitans.gif" style="width:100%" alt="Team Picture"></a>
+      <a href="https://thomas-a-edison-cte-hs.github.io/iAmsterdam/" ><img src="images/iAmsterdam.gif" style="width:100%" alt="Team Picture"></a>
+   </div>
+
+    <div class="w3-third">
+      <a href="https://deveshsukhdeo.github.io/InfyAppPyMasters/" ><img src="images/PyMasters.gif" style="width:100%" alt="Team Picture"></a>
+      <a href="https://thomas-a-edison-cte-hs.github.io/theInnovators" ><img src="images/TheInnovators.gif" style="width:100%" alt="Team Picture"></a>
+      <a href="https://betsys23.github.io/INFYAPP/" ><img src="images/TheNewWorkers.gif" style="width:100%" alt="Team Picture"></a>
+       
+    </div>
+
+     <div class="w3-third">
+      <a href="https://thomas-a-edison-cte-hs.github.io/EmPow/" ><img src="images/EmPow.gif" style="width:100%" alt="Team Picture"></a>
+      <a href="https://mrsramirez.github.io/InfyApp2023Landing/" ><img src="images/InfyApp2023.jpg"  style="width:100%" alt="Team Picture"></a>
+      <a href="https://thomas-a-edison-cte-hs.github.io/InfyApp2024" ><img src="images/InfyApp_2024.png" style="width:100%" alt="Team Picture"></a>
+    </div>
+
+  </div>
+
+  
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- About section -->
+  <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
+    <h4><b>About Me</b></h4>
+    <img src="images/WorldTradeCeter.jpeg" alt="Me" class="w3-image w3-padding-32" width="100%" height="650">
+    <div class="w3-content w3-justify" style="max-width:600px">
+     <h1>The InfyApp Challenge</h1>
+  <p>We will focus on learning how apps can be built to address real-world social issues such as public health, climate change, or food security.</p>
+
+  <div class="section">
+    <h2>🎯 Goals</h2>
+    <p>Students will determine <strong>two personal learning goals</strong> focused on the technology industry or technical knowledge they want to develop through their app project.</p>
+  </div>
+
+  <div class="section">
+    <h2>🤝 Mentorship</h2>
+    <p>Before each mentorship meeting, students will prepare a written agenda outlining:</p>
+    <ul>
+      <li>Progress made</li>
+      <li>Challenges faced</li>
+      <li>Questions about their project and goals</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>🔍 Research-Based Work</h2>
+    <p>Students will use online research, mentor advice, and peer collaboration to inform the design and features of their final product.</p>
+  </div>
+
+  <div class="section">
+    <h2>📅 Weekly Milestones</h2>
+    <p>Each project will have <strong>clear weekly goals and deliverables</strong> to track progress through the Infy App Challenge.</p>
+  </div>
+
+  <div class="section">
+    <h2>💬 Peer Feedback</h2>
+    <p>The PENCIL team will host weekly cohort meetings for students to:</p>
+    <ul>
+      <li>Share their app progress</li>
+      <li>Give and receive constructive feedback</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>🚀 Final Deliverable</h2>
+    <p>Each student will develop and present a <strong>working app</strong> that addresses their chosen social issue.</p>
+  </div>
+
+      
+      <hr class="w3-opacity">
+      <h4 class="w3-padding-16">Technical Skills</h4>
+      <p class="w3-wide">UI/UX Design</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:95%">95%</div>
+      </div>
+      <p class="w3-wide">Web Design</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:95%">95%</div>
+      </div>
+      <p class="w3-wide">Problem Solving and Computational Thinking</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:80%">80%</div>
+      </div>
+       <p class="w3-wide">Project Documentation</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:80%">80%</div>
+      </div>
+        <p class="w3-wide">Version Control & Deployment </p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:80%">80%</div>
+      </div>
+      <div class="bonus">
+    <h2>💡 Bonus Skills</h2>
+    <ul>
+      <li>Debugging and testing your code</li>
+      <li>Digital literacy and tool fluency</li>
+      <li>Pitching your project with confidence</li>
+    </ul>
+  </div>
+         
+        
+        
+      </div>
+    </div>
+  </div>
+      </div>
+    </div>
+  </footer>
+  
+  
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+
+
+</body>
+</html>
